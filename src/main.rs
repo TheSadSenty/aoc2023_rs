@@ -1,3 +1,5 @@
+mod days;
+use crate::days::day_1;
 fn main() {
-    println!("Hello, world!");
+    day_1::solve();
 }
