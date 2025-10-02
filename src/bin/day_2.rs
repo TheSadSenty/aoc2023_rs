@@ -1,9 +1,9 @@
 use anyhow::Result;
-use aoc2023::{main_solver, Solver};
+use aoc2023::{launch_solver, Solver};
 
-struct Day2();
+struct Day2Solver();
 
-impl Solver for Day2 {
+impl Solver for Day2Solver {
     fn solve(input_data: String) -> u32 {
         let data_lines = input_data.lines();
         let mut sum = 0;
@@ -47,5 +47,5 @@ impl Solver for Day2 {
     }
 }
 fn main() -> Result<()> {
-    main_solver::<Day2>()
+    launch_solver::<Day2Solver>()
 }

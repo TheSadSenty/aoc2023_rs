@@ -1,11 +1,11 @@
 use std::collections::BTreeMap;
 
 use anyhow::Result;
-use aoc2023::{main_solver, Solver};
+use aoc2023::{launch_solver, Solver};
 
-struct Day1Part2();
+struct Day1Part2Solver();
 
-impl Solver for Day1Part2 {
+impl Solver for Day1Part2Solver {
     fn solve(input_data: String) -> u32 {
         let list_of_nums = BTreeMap::from([
             ("one", 1),
@@ -67,5 +67,5 @@ impl Solver for Day1Part2 {
     }
 }
 fn main() -> Result<()> {
-    main_solver::<Day1Part2>()
+    launch_solver::<Day1Part2Solver>()
 }
